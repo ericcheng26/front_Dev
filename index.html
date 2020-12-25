@@ -15,16 +15,21 @@
       box-sizing: border-box;
       font-size: 16px;
     }
-    DIV1{
-    display:inline-block;
-    width:200px;
-    height:50px;
-    border:2px #ccc solid;
-    margin-right:10px;
-    margin-bottom:10px;
+    @font-face {
+      font-family: Gentium;
+      src: url(http://example.com/fonts/Gentium.woff);
     }
-    a {
-      
+    a { font-family: Gentium, serif; 
+    }
+    DIV1 {
+      display:inline-block;
+      width:200px;
+      height:50px;
+      border:2px #ccc solid;
+      margin-right:10px;
+      margin-bottom:10px;
+      box-shadow:3px 3px 12px gold;
+      border-radius:10px;
     }
     html, body, .container, .row {
       margin: 0;
