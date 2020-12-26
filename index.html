@@ -33,9 +33,9 @@
     }
 
     .half {
-      position: fixed;
+      position: static;
       margin: 0;
-      width: 50% !important;
+      width: 30% !important;
       height: 100%;
     }
     .bg {
@@ -43,9 +43,9 @@
       background-size: cover;
     }
     .form {
-      left: 50%;
+     	width: 70%!important ;
       overflow: auto;
-      display: flex;
+      display: static;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
@@ -70,7 +70,13 @@
     section {
       margin-top: 1px;
       margin-bottom:1px;
-      padding: 2px 5px;
+      padding: 5px 5px;
+      display:flex;
+			align-items:center;
+			justify-content:center;
+			width:100%;
+			height:auto;
+			background-color:#eee;
       p {
           line-height: 3;
           font-synthesis: none;
@@ -83,9 +89,9 @@
     }
     [role="button"] {
       display: inline-block;
-      position: static;
+      position: relative;
       padding: 0.2em 0.5em;
-      border: 1px solid gray;
+      border: 0.5px  gray;
       border-radius: 20px;
       -webkit-box-shadow: 3px 3px 5px #f3d42e;
       -moz-box-shadow: 3px 3px 5px #f3d42e;
@@ -135,9 +141,10 @@
       <section class="six columns half form">
           <section>
             <a role="button" href="http://bit.ly/34IMRUf" target="_blank">選購網</a>
+            <text>&ensp;&ensp;&ensp;&ensp;</text>
             <a role="button" href="http://line.me/ti/g/H7A9mrgnL_" target="_blank">代購Line群</a>
            </section>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnRHv5_frj4LD5b7RTj-mQc5aTn8JLFz_0rC0p3h7PuJ8d0A/viewform?embedded=true" position="static" width="100%" min-height="560px" height="910px"allowfullscreen frameborder="0" marginheight="0" scrolling="no" marginwidth="0"margin-top="1px">載入中…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnRHv5_frj4LD5b7RTj-mQc5aTn8JLFz_0rC0p3h7PuJ8d0A/viewform?embedded=true" position="static" width="100%" min-height="560px" height="900px"allowfullscreen frameborder="0" marginheight="0" scrolling="no" marginwidth="0"margin-top="1px">載入中…</iframe>
       </section>
     </main>
   </div>
