@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
   <title>Xesla代購表單</title>
+  <link rel="shortcut icon" href="/xesla.ico">
   <link rel="canonical" href="https://xesla.xyz">
-
+	<link rel="apple-touch-icon" href="/xesla.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 
   <!-- customized style -->
@@ -64,19 +65,20 @@
       margin-right: auto;
       margin-left: auto;
       max-width: 500px;
-      background: grey;
+      
       
     }
-    section {
-      margin-top: 1px;
-      margin-bottom:1px;
-      padding: 5px 5px;
+    .button_main {
+      margin-top: 0;
+      margin-bottom:0;
+      padding: 4px 4px;
       display:flex;
 			align-items:center;
 			justify-content:center;
+			 
 			width:100%;
 			height:auto;
-			background-color:#eee;
+			background-color:rgba(255, 255, 255, 1);
       p {
           line-height: 3;
           font-synthesis: none;
@@ -90,15 +92,15 @@
     [role="button"] {
       display: inline-block;
       position: relative;
-      padding: 0.2em 0.5em;
-      border: 0.5px  gray;
+      padding: 0.3em 0.7em;
+      border: 0.5px inset rgba(255, 255, 255, 0);
       border-radius: 20px;
       -webkit-box-shadow: 3px 3px 5px #f3d42e;
       -moz-box-shadow: 3px 3px 5px #f3d42e;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
       text-decoration: none;
       text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-      background-color: #e0e0e0;
+      background-color: rgba(0,     0,     0, 0.1);
       color: black;
     }
     textarea {
@@ -112,30 +114,35 @@
         height: auto;
       }
       .bg {
-				position: relative;
+				position: sticky;
+				top: 0;
+				left: 0;
 	      width: 100%;
-	      height: 6%;
-	      margin: 0 auto;
+	      height: 8%;
+	      margin: 0px;
 				padding: 0 22px;
-				z-index: 2;
+				z-index: 1;
       }
       .form { 
 	      position: relative;
 	      padding-bottom: 900px;
-	      max-height: 1300px;  
+	      height: 100%;  
 	      max-width: 100%; 
+	      overflow: hidden;
+				
+				
 	    } 
-	    .form iframe, .for object, .form embed { 
+	    .form iframe, .form object, .form embed { 
 		    position: absolute; 
-		    top: 50px; 
+		    top: 30px; 
 		    left: 0; 
 		    width: 100%; 
-		    height: 105%; 
+		    height: 100%;
+		    overflow-x: hidden;
+				overflow-y: scroll;
 		  }
     }
   </style>
-
-  <link rel="shortcut icon" href="/xesla.ico"/>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -145,7 +152,7 @@
   <!-- End Google Tag Manager -->
 
 </head>
-<body>
+<body >
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZRPRRR"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -155,13 +162,13 @@
       <!-- bg -->
       <section class="six columns half bg"></section>
       <!-- form -->
-      <section class="six columns half form">
-          <section>
+      <section class="six columns half form" >
+          <div class="button_main">
             <a role="button" href="http://bit.ly/34IMRUf" target="_blank">選購網</a>
             <text>&ensp;&ensp;&ensp;&ensp;</text>
             <a role="button" href="http://line.me/ti/g/H7A9mrgnL_" target="_blank">代購Line群</a>
-           </section>
-					 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnRHv5_frj4LD5b7RTj-mQc5aTn8JLFz_0rC0p3h7PuJ8d0A/viewform?embedded=true" id="myiframe" name="myiframe" width='100%' height='1300px' frameborder='0' marginheight='0' marginwidth='0' scrolling="no">載入中…</iframe>
+           </div>
+					 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnRHv5_frj4LD5b7RTj-mQc5aTn8JLFz_0rC0p3h7PuJ8d0A/viewform?embedded=true" id="myiframe" name="myiframe" width='100%' height='900px' frameborder='0' marginheight='0' marginwidth='0' scrolling="no">載入中…</iframe>
 						<script>
 						document.querySelector("iframe").addEventListener("load", 
 						    function() {
